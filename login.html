@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap css cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Header Top -->
+    <section class="navbar-top">
+        <div class="container nav-top">
+            <div class="row">
+                <div class="col-10">
+                    <div class="top-nav pt-1">
+                        <p class="top-heading"><i class="fa-solid fa-envelope"
+                                style="color: rgb(80, 208, 247);"></i><strong>
+                                Email:</strong> info123@gmail.com</p>
+                        <p class="top-heading"><i class="fa-solid fa-phone"
+                                style="color: rgb(80, 208, 247);"></i><strong>
+                                Phone:</strong> +88 01234567890</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-outline-success"><i class="fa-solid fa-right-to-bracket"
+                            style="color: (80, 208, 247);"></i> Login</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><i class="fa-solid fa-school" style="color: #f3ae60;"> Edu
+                    School</i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teacher.html">Teacher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="student.html">Student</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="result.html">Result</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academic.html">Academic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-weight: 900; color: #f3ae60;" aria-current="page"
+                            href="login.html">Login</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Section -->
+    <nav class="bg-light p-3 rounded mb-4" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 align-items-center justify-content-center">
+            <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Login</li>
+        </ol>
+    </nav>
+
+    <!-- Form section -->
+    <section class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+
+        <div class="card shadow-sm border-0 mb-5" style="width: 100%; max-width: 500px; background-color: #faf5ef;">
+            <div class="card-body p-4 p-md-5">
+
+                <h3 class="text-success text-center mb-4">Login Form</h3>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="usernameInput" class="form-label fw-semibold">User Name</label>
+                        <input type="text" class="form-control" id="usernameInput" placeholder="Enter username">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label fw-semibold">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="name@example.com">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label fw-semibold">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="••••••••">
+                    </div>
+
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label text-muted" for="exampleCheck1">Remember me</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100 py-2">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer start -->
+    <footer class="bg-dark pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-warning mb-3"><i class="fas fa-graduation-cap"></i> About EduSchool</h5>
+                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores rem labore,
+                        veniam
+                        veritatis hic facilis. Doloribus nam fuga laboriosam voluptatem.</p>
+                </div>
+                <div class="col-md-4" id="option-footer">
+                    <h5 class="fw-bold text-warning mb-3"><i class="fas fa-graduation-cap"></i> Quick System Navigation
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li class="option mb-2"><a href="about.html" class="text-white text-decoration-none"><i
+                                    class="fas fa-angle-right me-1"></i>Detailed History</a></li>
+                        <li class="option mb-2"><a href="academic.html" class="text-white text-decoration-none"><i
+                                    class="fas fa-angle-right me-1"></i>Academic Calendar</a></li>
+                        <li class="option mb-2"><a href="result.html" class="text-white text-decoration-none"><i
+                                    class="fas fa-angle-right me-1"></i>Look Up Student Results</a></li>
+                        <li class="option mb-2"><a href="teacher.html" class="text-white text-decoration-none"><i
+                                    class="fas fa-angle-right me-1"></i>Faculty Members</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-warning mb-3"><i class="fas fa-graduation-cap"></i> Contact Communications
+                    </h5>
+                    <p class="text-white mb-1"><i class="fas fa-map-marker-alt me-2"></i> 123 Mohammadpur Road, Dhaka
+                    </p>
+                    <p class="text-white mb-1"><i class="fas fa-phone-alt me-2"></i> Phone: +123 456 7890</p>
+                    <p class="text-white mb-1"><i class="fas fa-envelope me-2"></i> Email: info@school.edu</p>
+                </div>
+            </div>
+            <hr class="text-white my-4">
+            <div class="text-center text-white-50">
+                <p class="mb-0">&copy; 2026 EduSchool. Designed dynamically keeping safety, styling standard
+                    constraints, and
+                    total operational responsivity intact.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap css cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
