@@ -58,3 +58,102 @@
 }
 
 /* notice */
+
+/* Responsive tweaks */
+/* Ensure images scale, adjust nav sizes, and stack gracefully on small screens */
+.img-fluid {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover;
+}
+
+/* Override fixed carousel image height on small screens */
+.carousel-item img {
+  height: 480px; /* default for large screens */
+}
+
+@media (max-width: 992px) {
+  .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+  /* Change hamburger (three-line) icon color for medium screens */
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f3ae60' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    padding-right: 6px;
+  }
+
+  /* Make the full-height search section shorter on small devices */
+  .min-vh-100 {
+    min-height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Stack and add spacing for last year result cards */
+  .last-year-results .card {
+    margin-bottom: 1rem;
+  }
+
+  .carousel-item img {
+    height: auto;
+    max-height: 380px;
+  }
+  /* Change hamburger (three-line) icon color on small screens */
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f3ae60' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+
+  .top-heading {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+
+  /* Reduce large headings inside cards for small screens */
+  .card-body h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Ensure large cards center and fit on very small screens */
+  .card.mx-auto {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/* Minor accessibility: increase tap targets on small screens */
+@media (max-width: 480px) {
+  .btn {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+}
+
+/* Last Year Result Section hover styles */
+.last-year-results .card {
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.last-year-results .card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+  border-color: #f3ae60;
+}
+
+.last-year-results .card:hover h2 {
+  color: #f3ae60;
+}
